@@ -2,81 +2,7 @@
 <html>
 <head>
 <title>Collapse</title>
-
-<style type="text/css">
-
-.collapse{
-	
-}
-
-p{
-	text-align: justify;
-	padding: 5px;
-}
-
-#question-1{
-	width: 500px;
-	height: auto;
-	background-color: #006bff;
-	text-align: center;
-	border: 1px solid black;
-	cursor: pointer;
-}
-
-#answer-1{
-	width: 500px;
-	height: auto;
-	background-color: #e1e7e1;
-	text-align: center;
-	border: 1px solid black;
-}
-
-.answer-1{
-	display: none;
-}
-
-.answer-2{
-	display: none;
-}
-
-.answer-3{
-	display: none;
-}
-
-#question-2{
-	width: 500px;
-	height: auto;
-	background-color: #006bff;
-	text-align: center;
-	border: 1px solid black;
-	cursor: pointer;
-}
-
-#answer-2{
-	width: 500px;
-	height: auto;
-	background-color: #e1e7e1;
-	text-align: center;
-	border: 1px solid black;
-}
-
-#question-3{
-	width: 500px;
-	height: auto;
-	background-color: #006bff;
-	text-align: center;
-	border: 1px solid black;
-	cursor: pointer;
-}
-
-#answer-3{
-	width: 500px;
-	height: auto;
-	background-color: #e1e7e1;
-	text-align: center;
-	border: 1px solid black;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="collapse">
@@ -109,49 +35,6 @@ p{
 		</p>
 	</div>
 </div>
-<script type="text/javascript">
-	var questionOne = document.getElementById("question-1");
-	var questionTwo = document.getElementById("question-2");
-	var questionThree = document.getElementById("question-3");
-	var answerOne = document.getElementById("answer-1");
-	var answerTwo = document.getElementById("answer-2");
-	var answerThree = document.getElementById("answer-3");
-
-
-	function showAnswer(){
-		if(answerOne.style.display === "none"){
-			answerOne.style.display = "block";
-			console.log("Question and Asnwer 1");
-	
-		} 
-		else{
-			answerOne.style.display = "none";
-		}
-	}
-
-	function showAnswer2(){
-		if(answerTwo.style.display === "none"){
-			answerTwo.style.display = "block";
-			console.log("Question and Asnwer 2");
-	
-		} 
-		else{
-			answerTwo.style.display = "none";
-		}
-	}
-
-	function showAnswer3(){
-		if(answerThree.style.display === "none"){
-			answerThree.style.display = "block";
-			console.log("Question and Asnwer 3");
-	
-		} 
-		else{
-			answerThree.style.display = "none";
-		}
-	}
-
-
-</script>
+<script src="script.js"></script>
 </body>
 </html>
